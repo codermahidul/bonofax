@@ -43,4 +43,28 @@ a {
  ===========================*/
 
 
- 
+/*============================
+ Google Fonts Start 
+ ===========================*/
+ @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+ /* Css Variable */
+ :root {
+    --heading: 'Libre Baskerville', serif;
+    --text:  'Manrope', sans-serif;
+    --primary-color: #FAA392;
+    --black-color: #002633;
+    --white-color: #ffffff;
+  }
+
+
+/*============================
+ Google Fonts End 
+ ===========================*/
+
+
+
+
+
