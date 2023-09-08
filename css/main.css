@@ -1,0 +1,133 @@
+/*============================
+ Common CSS Start 
+ ===========================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+ol,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+/*============================
+ Common CSS End 
+ ===========================*/
+
+
+/*============================
+ Google Fonts Start 
+ ===========================*/
+ @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+ /* Css Variable */
+ :root {
+    --heading: 'Libre Baskerville', serif;
+    --text:  'Manrope', sans-serif;
+    --primary-color: #FAA392;
+    --black-color: #002633;
+    --white-color: #ffffff;
+  }
+
+
+/*============================
+ Google Fonts End 
+ ===========================*/
+
+
+
+/*============================
+ Top Header Start 
+ ===========================*/
+#topHeader{
+    background: var(--black-color);
+    height: 50px;
+    line-height: 50px;
+}
+
+
+#topHeader .topLeftMenu li a,
+#topHeader .topLeftMenu li p{
+    color: var(--white-color);
+}
+
+#topHeader .topLeftMenu li{
+    margin-right: 20px;
+}
+
+
+#topHeader .topLeftMenu li p i,
+#topHeader .topLeftMenu li a i{
+    background: var(--white-color);
+    color: var(--primary-color);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 25px;
+    text-align: center;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+#topHeader .topRightMenu li{
+    margin-left: 20px;
+}
+
+
+#topHeader .topRightMenu li a{
+    background: var(--white-color);
+    color: var(--primary-color);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 25px;
+    text-align: center;
+    transition: all linear .3s;
+    font-size: 14px;
+}
+
+#topHeader .topRightMenu li a:hover{
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+
+/*============================
+ Top Header End 
+ ===========================*/
+
+
+
+
+
