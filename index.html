@@ -7,11 +7,13 @@
     <link rel="shortcut icon" href="img/icon/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugin/nice-select/nice-select.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
 <!-- ===========================
-Top Menu
+Top Menu Start
 ============================ -->
 <section id="topHeader">
     <div class="container">
@@ -46,11 +48,144 @@ Top Menu
         </div>
     </div>
 </section>
+
+<!-- ===========================
+Top Menu End
+============================ -->
+
+<!-- ===========================
+Main Menu Start
+============================ -->
     
+
+<nav class="navbar navbar-expand-lg" id="mainMenu">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" class="img-fluid w-100"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" >Home <i class="fas fa-angle-down"></i></a>
+            <ul class="dropdownMenu">
+                <li><a href="#">Home 2</a></li>
+                <li><a href="#">Home 3</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Pages <i class="fas fa-angle-down"></i>
+            </a>
+            <ul class="dropdownMenu">
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+              <li><a href="#">Page Name</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <ul class="endMenu d-flex flex-wrap">
+            <li class="topMenuSearch"><a href="#"><i class="fas fa-search"></i></a>
+                <div class="search_form">
+                    <form>
+                        <span class="closeSearchForm"><i class="fas fa-times"></i></span>
+                        <input type="text" placeholder="Search...">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </li>
+            <li class="reservation"><a data-bs-toggle="modal" data-bs-target="#exampleModal">Reservation</a></li>
+            <li><a href="#"><i class="fas fa-user"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Modal -->
+<div id="reservationModal">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Make An Appointment</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <input type="text" class="form-control" placeholder="Name">
+                <input type="text" class="form-control" placeholder="Phone">
+                <input type="text" class="form-control" placeholder="Address">
+                <select name="" id="nice-select-one" class="form-control">
+                    <option value="" selected>Select Service</option>
+                    <option value="">Option 2</option>
+                    <option value="">Option 3</option>
+                    <option value="">Option 4</option>
+                    <option value="">Option 5</option>
+                    <option value="">Option 6</option>
+                </select>
+                <input type="date" name="" id="" class="form-control">
+                <select name="" id="nice-select-two" class="form-control">
+                    <option value="" selected>Select Service</option>
+                    <option value="">Option 2</option>
+                    <option value="">Option 3</option>
+                    <option value="">Option 4</option>
+                    <option value="">Option 5</option>
+                    <option value="">Option 6</option>
+                </select>
+                <textarea placeholder="Message" class="form-control" rows="5"></textarea>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<!-- ===========================
+Main Menu Start
+============================ -->
 
 
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/jquery-1.12.4.min.js"></script>
+<script src="plugin/nice-select/nice-select.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
