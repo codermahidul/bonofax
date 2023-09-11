@@ -95,7 +95,7 @@ body{
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 #faa392;
+        box-shadow: 0 0 0 0 var(--primary-color);
     }
 }
 
@@ -149,7 +149,9 @@ body{
     --heading: 'Libre Baskerville', serif;
     --text:  'Manrope', sans-serif;
     --primary-color: #FAA392;
+    --primary-color-50: #fceae8;
     --black-color: #002633;
+    --black-color-50: #666a6c;
     --white-color: #ffffff;
     --boxshadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
@@ -652,6 +654,71 @@ body{
     padding: 150px 0;
 }
 
+#services .serviceItem {
+    background-color: var(--primary-color-50);
+    border-radius: 5px;
+    padding: 100px 20px 40px;
+    position: relative;
+    margin-top: 100px;
+    transition: all linear .3s;
+    margin: 100px 12px 30px 12px;
+}
+
+#services .serviceItem:hover{
+    background-color: var(--primary-color);
+}
+
+#services .serviceItem .icon {
+    position: absolute;
+    background: url(../img/icon/featured_servoce_shape.png);
+    width: 90px;
+    height: 102px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -30px;
+    left: 0;
+    text-align: center;
+}
+
+#services .serviceItem .icon i{
+    text-align: center;
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+    color: var(--white-color);
+}
+
+#services .serviceItem h3{
+    font-family: var(--text);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--black-color);
+    text-transform: capitalize;
+    transition: all linear .3s;
+}
+
+#services .serviceItem p{
+    font-family: var(--text);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black-color-50);
+    text-transform: capitalize;
+    line-height: 26px;
+    margin-top: 10px;
+    transition: all linear .3s;
+}
+
+#services .serviceItem:hover h3,
+#services .serviceItem:hover p{
+    color: var(--white-color);
+}
+
+#services .slick-dots{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
  /*============================
  Service Section End
